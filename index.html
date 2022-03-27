@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloform.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <div>
+
+            <h1 id="title">FORMULARIO DE ENCUESTAS</h1>
+
+            <p id="description">Dedique unos minutos a completar esta pequeña encuesta.
+                Sus respuestas solo serán utilizadas únicamente para mejorar la plataforma.
+            </p>
+
+            <form id="survey-form">
+
+                    <label for="name" id="name">Nombre</label><br>
+                    <input type="text" name="name" placeholder="Ingrese su Nombre" id="input"><br><br>
+
+
+                    <label for="email" id="email">Correo</label><br>
+                    <input type="text" name="email" placeholder="Ingrese su correo"><br><br>
+
+                    <label for="telefono" id="telefono">Telefono</label><br>
+                    <input type="number" name="telefono" placeholder="Ingrese Numero"><br><br>
+
+                    <label for="edad" id="edad">Edad</label>
+                    <input type="number" name="edad" min="17" max="99" placeholder="Edad">
+
+                    <label for="Genero" id="genero">Genero</label>
+                    <select name="seleccione" id="dropdown">
+                        <option value="seleccione">seleccione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+
+                    <h4>Como calificarias a FREECODECAMP ?.</h4>
+
+                    
+                    <input type="radio" name="calificacion"><label for="">Muy Bueno</label><br>
+                    
+                    <input type="radio"name="calificacion"><label for="">Bueno</label><br>
+                    
+                    <input type="radio"name="calificacion"><label for="">Regular</label><br>
+                    
+                    <input type="radio"name="calificacion"><label for="">Malo</label><br>
+                    
+                    <input type="radio"name="calificacion"><label for="">Muy Malo</label>
+
+                    <h4>Que curso(s) estas aprendiendo ?</h4>
+
+                    <input type="checkbox" name="" value="diseño-web" id=""> <label for="">Diseño Web Responsivo</label><br>
+                    
+                    <input type="checkbox" name="" value="js" id=""><label for="">Algoritmos de JS y estructura de Datos</label><br>
+                    
+                    <input type="checkbox" name="" value="librerias" id=""><label for="">Librerias de desarrollo de la Interfaz</label><br>
+                    
+                    <input type="checkbox" name="" value="back-end" id=""><label for="">Desarrollo Back End y Api's</label>
+
+                    <h4>Sugerencias o Comentario</h4>
+                    <textarea id="comentario" placeholder="ingrese aqui su comentario o sugerencias."></textarea><br>
+
+                    <button id="submit">Enviar</button>
+            </form>
+
+            
+    </div>
+</body>
+</html>
